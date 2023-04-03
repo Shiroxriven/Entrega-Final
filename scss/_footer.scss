@@ -1,0 +1,14 @@
+.footer ul {
+    list-style: none;
+    li a {
+        display: block;
+        text-decoration: none;
+        font-family: $Family;
+        color: grey;
+        font-size: 25px;
+        padding: 10px;
+    }
+    li a:hover{
+        color: black;
+    }
+}
