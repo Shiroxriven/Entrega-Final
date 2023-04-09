@@ -1,3 +1,5 @@
+@import "mixin";
+
 *{
     margin: 0;
     padding: 0;
@@ -5,19 +7,29 @@
     font-family: $Family;
 }
 
+.fondoform2{
+        height: 100%;
+        width: 100%;
+        background-image: url(../assets/fondoform2.jpg);
+        background-position: center;
+        background-size: cover;
+        padding: 110px 10px;
+    }
+
 .formulario {
-        width: 370px;
-        height: 455px;
+        @include sizes(370px,455px);
         position: relative;
         margin: 6% auto;
-        background: lightblue;
         padding: 5px;
         border-radius: 10px;
+        background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
     h2{
             font-family: $Family;
             font-size: 40px;
             text-align: center;
             margin-top: 50px;
+            color: #FFFFFF;
+            text-shadow: 3px 5px 2px #474747;
         }
     span{
             color: grey;
@@ -58,3 +70,9 @@
             margin: 30px 10px 30px 0;
         }
     }
+
+@media (min-width: 768px){
+    .fondoform2{
+        padding: 200px 20px;
+    }
+}

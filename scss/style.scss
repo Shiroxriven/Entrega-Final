@@ -1,19 +1,20 @@
-$Family:  'Roboto', sans-serif;
-@import "navegador";
-@import "filtros";
-@import "footer";
-@import "formulario";
-
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+$Family:  'Roboto', sans-serif;
+@import "navegador";
+@import "filtros";
+@import "footer";
+@import "formulario";
+@import "formcontacto";
+
+
 
 .titulos{
-    font-size: 70px;
+    font-size: 30px;
     text-align: center;
     font-family: $Family;
     color: #202c2d;
@@ -23,4 +24,10 @@ $Family:  'Roboto', sans-serif;
 
 .btn {
    background-color: red;  
+}
+
+@media (min-width: 768px){
+    .titulos{
+        font-size: 45px;
+    }
 }
