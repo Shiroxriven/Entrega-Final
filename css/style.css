@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+}
+
 .navbar ul li a {
   font-size: 20px;
   font-family: "Roboto", sans-serif;
@@ -27,21 +31,25 @@
 }
 
 .footer {
+  flex-direction: row;
   background-color: #f8f9fa;
 }
 .footer ul {
   list-style: none;
 }
-.footer li a {
-  display: block;
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  color: grey;
-  font-size: 25px;
-  padding: 10px;
+.footer .logofooter {
+  width: 20%;
 }
-.footer li a:hover {
-  color: black;
+.footer .logofooter img {
+  max-width: 80px;
+}
+.footer .redes {
+  width: 80%;
+}
+.footer .redes ul > li > img {
+  max-width: 60px;
+  padding: 3px;
+  cursor: pointer;
 }
 
 * {
@@ -219,7 +227,8 @@
   }
 }
 .titulos {
-  font-size: 30px;
+  font-size: 60px;
+  padding-top: 10px;
   text-align: center;
   font-family: "Roboto", sans-serif;
   color: #202c2d;

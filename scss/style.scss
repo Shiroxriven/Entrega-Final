@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+img{
+    max-width: 100%;
+}
 
 $Family:  'Roboto', sans-serif;
 @import "navegador";
@@ -14,7 +17,8 @@ $Family:  'Roboto', sans-serif;
 
 
 .titulos{
-    font-size: 30px;
+    font-size: 60px;
+    padding-top: 10px;
     text-align: center;
     font-family: $Family;
     color: #202c2d;

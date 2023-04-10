@@ -1,17 +1,21 @@
-.footer {
+.footer {   
+    flex-direction: row;
     background-color: #f8f9fa;
     ul{
     list-style: none;
-}
-    li a {
-        display: block;
-        text-decoration: none;
-        font-family: $Family;
-        color: grey;
-        font-size: 25px;
-        padding: 10px;
-        &:hover{
-            color: black;
+    }
+    .logofooter{
+        width: 20%;
+        img{
+            max-width: 80px;
+        }
+    }
+    .redes{
+        width: 80%;
+        ul>li>img{
+            max-width: 60px;
+            padding: 3px;
+            cursor: pointer;
         }
     }
 }
