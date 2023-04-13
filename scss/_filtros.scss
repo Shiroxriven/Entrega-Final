@@ -1,12 +1,29 @@
-.filtros h3{
-    font-family: 'Roboto', sans-serif;
-    padding: 10px;
+.filtros {
+    display: grid;
+    justify-content: center;
+
+    h3 {
+        font-size: 40px;
+        font-family: 'Roboto', sans-serif;
+        padding: 10px;
+        text-align: center;
+    }
+
+    ul li {
+        display: block;
+        text-decoration: none;
+        font-family: $Family;
+        font-size: 25px;
+        padding: 5px;
+    }
+
+    input {
+        margin: 7px;
+    }
 }
 
-.filtros ul li {
-    display: block;
-    text-decoration: none;
-    font-family: $Family;
-    font-size: 25px;
-    padding: 5px;
+@media (min-width: 1140px) {
+    ul {
+        display: flex;
+    }
 }

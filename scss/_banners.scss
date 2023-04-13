@@ -1,0 +1,33 @@
+.banner {
+    position: relative;
+    color: #FFFFFF;
+    text-shadow: 0 0 10px #FFFFFF;
+    text-align: center;
+}
+
+.banner__titulo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+
+@media (min-width: 675px) {
+    .banner__titulo {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .banner__titulo {
+        font-size: 60px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .titulos__titulo {
+        font-size: 100px;
+    }
+}

@@ -1,7 +1,7 @@
 @import "mixin";
 
 
-.fondoform{
+.fondoform {
     height: 100%;
     width: 100%;
     background-image: url(../assets/fondoform.jpg);
@@ -9,27 +9,32 @@
     background-size: cover;
     padding: 200px 10px;
 }
-.formcontainer{
-    background-image: linear-gradient( 35.2deg,  rgba(0,119,182,1) -18.7%, rgba(8,24,68,1) 54.3% );
+
+.formcontainer {
+    background-image: linear-gradient(35.2deg, rgba(0, 119, 182, 1) -18.7%, rgba(8, 24, 68, 1) 54.3%);
     border-radius: 10px;
-    iframe{
+
+    iframe {
         width: 100%;
         height: 100%;
         padding-left: 10px;
         padding-right: 10px;
     }
-    .formresponsive{
+
+    .formresponsive {
         padding-top: 15px;
         padding-left: 10px;
         padding-right: 10px;
     }
-    .contcampos{
+
+    .contcampos {
         width: 100%;
         height: 100%;
         padding: 15px 10px;
         font-size: 15px;
         margin-bottom: 20px;
     }
+
     .btnenviar {
         width: 85%;
         padding: 10px 30px;
@@ -40,24 +45,28 @@
         border-radius: 30px;
         margin-bottom: 30px;
         margin-left: 20px;
-        &:hover{
+
+        &:hover {
             background-color: lightblue;
         }
     }
-    .infoform{
-        h2{
+
+    .infoform {
+        h2 {
             font-size: 30px;
             text-align: center;
             color: #FFFFFF;
             text-shadow: 3px 5px 2px #474747;
             padding-top: 20px;
         }
-        p{
+
+        p {
             font-size: 20px;
             text-align: center;
             color: white;
         }
-        h3{
+
+        h3 {
             font-size: 30px;
             text-align: center;
             color: white;
@@ -66,23 +75,27 @@
 }
 
 
-@media (min-width: 900px){
-    .fondoform{
-        padding:300px 20px;
-        .formcontainer{
+@media (min-width: 900px) {
+    .fondoform {
+        padding: 300px 20px;
+
+        .formcontainer {
             display: flex;
             width: 100%;
             height: 100%;
             padding: 100px 80px;
         }
-        .formresponsive{
+
+        .formresponsive {
             width: 100%;
             height: 100%;
         }
-        textarea{
+
+        textarea {
             max-width: 1400px;
             min-height: 300px;
         }
+
         .btnenviar {
             width: 100px;
             padding: 10px 30px;
@@ -91,11 +104,13 @@
             margin-bottom: 30px;
             margin-right: 300px;
         }
-        iframe{
+
+        iframe {
             width: auto;
             height: 50%;
         }
-        .infoform{
+
+        .infoform {
             padding-right: 50px;
         }
     }

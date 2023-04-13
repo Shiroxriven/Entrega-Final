@@ -1,37 +1,89 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-img{
+
+img {
     max-width: 100%;
 }
 
-$Family:  'Roboto', sans-serif;
+$Family: 'Roboto', sans-serif;
 @import "navegador";
 @import "filtros";
 @import "footer";
 @import "formulario";
 @import "formcontacto";
+@import "banners";
 
+main {
+    background-color: #ECECEC;
+}
 
-
-.titulos{
-    font-size: 60px;
-    padding-top: 10px;
+.titulos {
+    width: 100%;
     text-align: center;
-    font-family: $Family;
     color: #202c2d;
     background: #FFFFFF;
     text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5, -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5;
 }
 
-.btn {
-   background-color: red;  
+.titulos__titulo {
+    font-size: 30px;
 }
 
-@media (min-width: 768px){
-    .titulos{
-        font-size: 45px;
+.card {
+    background-color: #1C1C1E;
+}
+
+.card-title {
+    color: #FF5A5F;
+}
+
+.card-text {
+    color: #FFFFFF;
+}
+
+.btn {
+    background-color: red;
+}
+
+.videoyt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ECECEC;
+
+    h2 {
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 1rem;
+        color: #202c2d;
+        text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5, -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5;
+    }
+
+    p {
+        font-size: 20px;
+        text-align: center;
+        max-width: 600px;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .titulos__titulo {
+        font-size: 70px;
+    }
+
+    .videoyt {
+        h2 {
+            font-size: 70px;
+        }
+
+        p {
+            font-size: 30px;
+        }
     }
 }

@@ -1,78 +1,84 @@
 @import "mixin";
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-size: 13px;
     font-family: $Family;
 }
 
-.fondoform2{
-        height: 100%;
-        width: 100%;
-        background-image: url(../assets/fondoform2.jpg);
-        background-position: center;
-        background-size: cover;
-        padding: 110px 10px;
-    }
+.fondoform2 {
+    height: 100%;
+    width: 100%;
+    background-image: url(../assets/fondoform2.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 110px 10px;
+}
 
 .formulario {
-        @include sizes(370px,455px);
-        position: relative;
-        margin: 6% auto;
-        padding: 5px;
-        border-radius: 10px;
-        background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-    h2{
-            font-family: $Family;
-            font-size: 40px;
-            text-align: center;
-            margin-top: 50px;
-            color: #FFFFFF;
-            text-shadow: 3px 5px 2px #474747;
-        }
-    span{
-            color: grey;
-            font-size: 15px;
-            bottom: 64px;
-            position: absolute;
-        }
-    .forminicio{
-            left: 50px;
-            top: 140px;
-            position: absolute;
-            width: 280px;
-            transition: 0.8s;
-        }
-    .input-field{
-            width: 100%;
-            padding: 10px 0;
-            margin: 5px 0;
-            border-left: 0;
-            border-top: 0;
-            border-right: 0;
-            border-bottom: 2px solid black;
-            outline: none;
-            background: transparent;
-        }
-    .submit-btn{
-            width: 85%;
-            padding: 10px 30px;
-            cursor: pointer;
-            display: block;
-            margin: auto;
-            background: linear-gradient( to right, rgba(63, 81, 181, 0.7), rgba(0, 188, 212, 0.7));
-            border: 0px;
-            outline: none;
-            border-radius: 30px;
-        }
-    .check-box{
-            margin: 30px 10px 30px 0;
-        }
+    @include sizes(370px, 455px);
+    position: relative;
+    margin: 6% auto;
+    padding: 5px;
+    border-radius: 10px;
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+
+    h2 {
+        font-family: $Family;
+        font-size: 40px;
+        text-align: center;
+        margin-top: 50px;
+        color: #FFFFFF;
+        text-shadow: 3px 5px 2px #474747;
     }
 
-@media (min-width: 768px){
-    .fondoform2{
+    span {
+        color: grey;
+        font-size: 15px;
+        bottom: 64px;
+        position: absolute;
+    }
+
+    .forminicio {
+        left: 50px;
+        top: 140px;
+        position: absolute;
+        width: 280px;
+        transition: 0.8s;
+    }
+
+    .input-field {
+        width: 100%;
+        padding: 10px 0;
+        margin: 5px 0;
+        border-left: 0;
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 2px solid black;
+        outline: none;
+        background: transparent;
+    }
+
+    .submit-btn {
+        width: 85%;
+        padding: 10px 30px;
+        cursor: pointer;
+        display: block;
+        margin: auto;
+        background: linear-gradient(to right, rgba(63, 81, 181, 0.7), rgba(0, 188, 212, 0.7));
+        border: 0px;
+        outline: none;
+        border-radius: 30px;
+    }
+
+    .check-box {
+        margin: 30px 10px 30px 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .fondoform2 {
         padding: 200px 20px;
     }
 }

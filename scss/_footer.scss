@@ -1,18 +1,25 @@
-.footer {   
+.footer {
     flex-direction: row;
     background-color: #f8f9fa;
-    ul{
-    list-style: none;
+    width: 100%;
+    padding: 10px;
+
+    ul {
+        list-style: none;
     }
-    .logofooter{
+
+    .logofooter {
         width: 20%;
-        img{
+
+        img {
             max-width: 80px;
         }
     }
-    .redes{
+
+    .redes {
         width: 80%;
-        ul>li>img{
+
+        ul>li>img {
             max-width: 60px;
             padding: 3px;
             cursor: pointer;

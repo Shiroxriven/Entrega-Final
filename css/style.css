@@ -12,14 +12,22 @@ img {
   font-size: 20px;
   font-family: "Roboto", sans-serif;
 }
+
 .navbar .navbar-brand {
   font-size: 30px;
   font-family: "Roboto", sans-serif;
 }
 
+.filtros {
+  display: grid;
+  justify-content: center;
+}
+
 .filtros h3 {
+  font-size: 40px;
   font-family: "Roboto", sans-serif;
   padding: 10px;
+  text-align: center;
 }
 
 .filtros ul li {
@@ -30,23 +38,40 @@ img {
   padding: 5px;
 }
 
+.filtros input {
+  margin: 7px;
+}
+
+@media (min-width: 1140px) {
+  ul {
+    display: flex;
+  }
+}
+
 .footer {
   flex-direction: row;
   background-color: #f8f9fa;
+  width: 100%;
+  padding: 10px;
 }
+
 .footer ul {
   list-style: none;
 }
+
 .footer .logofooter {
   width: 20%;
 }
+
 .footer .logofooter img {
   max-width: 80px;
 }
+
 .footer .redes {
   width: 80%;
 }
-.footer .redes ul > li > img {
+
+.footer .redes ul>li>img {
   max-width: 60px;
   padding: 3px;
   cursor: pointer;
@@ -77,6 +102,7 @@ img {
   border-radius: 10px;
   background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 }
+
 .formulario h2 {
   font-family: "Roboto", sans-serif;
   font-size: 40px;
@@ -85,12 +111,14 @@ img {
   color: #FFFFFF;
   text-shadow: 3px 5px 2px #474747;
 }
+
 .formulario span {
   color: grey;
   font-size: 15px;
   bottom: 64px;
   position: absolute;
 }
+
 .formulario .forminicio {
   left: 50px;
   top: 140px;
@@ -98,6 +126,7 @@ img {
   width: 280px;
   transition: 0.8s;
 }
+
 .formulario .input-field {
   width: 100%;
   padding: 10px 0;
@@ -109,6 +138,7 @@ img {
   outline: none;
   background: transparent;
 }
+
 .formulario .submit-btn {
   width: 85%;
   padding: 10px 30px;
@@ -120,6 +150,7 @@ img {
   outline: none;
   border-radius: 30px;
 }
+
 .formulario .check-box {
   margin: 30px 10px 30px 0;
 }
@@ -129,6 +160,7 @@ img {
     padding: 200px 20px;
   }
 }
+
 .fondoform {
   height: 100%;
   width: 100%;
@@ -142,17 +174,20 @@ img {
   background-image: linear-gradient(35.2deg, rgb(0, 119, 182) -18.7%, rgb(8, 24, 68) 54.3%);
   border-radius: 10px;
 }
+
 .formcontainer iframe {
   width: 100%;
   height: 100%;
   padding-left: 10px;
   padding-right: 10px;
 }
+
 .formcontainer .formresponsive {
   padding-top: 15px;
   padding-left: 10px;
   padding-right: 10px;
 }
+
 .formcontainer .contcampos {
   width: 100%;
   height: 100%;
@@ -160,6 +195,7 @@ img {
   font-size: 15px;
   margin-bottom: 20px;
 }
+
 .formcontainer .btnenviar {
   width: 85%;
   padding: 10px 30px;
@@ -171,9 +207,11 @@ img {
   margin-bottom: 30px;
   margin-left: 20px;
 }
+
 .formcontainer .btnenviar:hover {
   background-color: lightblue;
 }
+
 .formcontainer .infoform h2 {
   font-size: 30px;
   text-align: center;
@@ -181,11 +219,13 @@ img {
   text-shadow: 3px 5px 2px #474747;
   padding-top: 20px;
 }
+
 .formcontainer .infoform p {
   font-size: 20px;
   text-align: center;
   color: white;
 }
+
 .formcontainer .infoform h3 {
   font-size: 30px;
   text-align: center;
@@ -196,20 +236,24 @@ img {
   .fondoform {
     padding: 300px 20px;
   }
+
   .fondoform .formcontainer {
     display: flex;
     width: 100%;
     height: 100%;
     padding: 100px 80px;
   }
+
   .fondoform .formresponsive {
     width: 100%;
     height: 100%;
   }
+
   .fondoform textarea {
     max-width: 1400px;
     min-height: 300px;
   }
+
   .fondoform .btnenviar {
     width: 100px;
     padding: 10px 30px;
@@ -218,31 +262,117 @@ img {
     margin-bottom: 30px;
     margin-right: 300px;
   }
+
   .fondoform iframe {
     width: auto;
     height: 50%;
   }
+
   .fondoform .infoform {
     padding-right: 50px;
   }
 }
-.titulos {
-  font-size: 60px;
-  padding-top: 10px;
+
+.banner {
+  position: relative;
+  color: #FFFFFF;
+  text-shadow: 0 0 10px #FFFFFF;
   text-align: center;
-  font-family: "Roboto", sans-serif;
+}
+
+.banner__titulo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+@media (min-width: 675px) {
+  .banner__titulo {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .banner__titulo {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .titulos__titulo {
+    font-size: 100px;
+  }
+}
+
+main {
+  background-color: #ECECEC;
+}
+
+.titulos {
+  width: 100%;
+  text-align: center;
   color: #202c2d;
   background: #FFFFFF;
   text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5, -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5;
+}
+
+.titulos__titulo {
+  font-size: 30px;
+}
+
+.card {
+  background-color: #1C1C1E;
+}
+
+.card-title {
+  color: #FF5A5F;
+}
+
+.card-text {
+  color: #FFFFFF;
 }
 
 .btn {
   background-color: red;
 }
 
-@media (min-width: 768px) {
-  .titulos {
-    font-size: 45px;
+.videoyt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #ECECEC;
+}
+
+.videoyt h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 1rem;
+  color: #202c2d;
+  text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5, -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5;
+}
+
+.videoyt p {
+  font-size: 20px;
+  text-align: center;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 800px) {
+  .titulos__titulo {
+    font-size: 70px;
+  }
+
+  .videoyt h2 {
+    font-size: 70px;
+  }
+
+  .videoyt p {
+    font-size: 30px;
   }
 }
 
